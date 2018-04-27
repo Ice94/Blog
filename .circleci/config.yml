@@ -39,7 +39,12 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run: gradle test
+      - run:
+            name: install yarn
+            command: sudo npm install -g yarn
+      - run:
+            name: Build Blog Application
+            command: sudo ./gradlew bootRepackage test
 
 
 
