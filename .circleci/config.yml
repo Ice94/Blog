@@ -39,6 +39,8 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
+      - run: sudo ./gradlew clean test
+
       - run:
             name: install yarn
             command: sudo npm install -g yarn
