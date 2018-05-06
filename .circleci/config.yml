@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: jhipster/jhipster
+      - image: springframeworkguru/circleci_build
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -52,8 +52,6 @@ jobs:
       - store_artifacts:
           path: ~/junit
 
-      - run:
-            command: apt-get install sudo -y
       - run:
           name: install yarn
           command: sudo npm install -g yarn
