@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: ice94/blog
+      - image: ice94/blog:jhipsterblog
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
