@@ -37,7 +37,7 @@ jobs:
 #          key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests and package
-#      - run: ./gradlew clean test
+      - run: ./gradlew clean test
 
       - run:
           name: Save test results
@@ -54,7 +54,7 @@ jobs:
 
       - run:
           name: install yarn
-          command: npm install -g yarn
+          command: sudo npm install -g yarn
 
       - run:
           name: Build Docker Image
