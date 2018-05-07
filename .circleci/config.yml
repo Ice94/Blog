@@ -57,5 +57,11 @@ jobs:
           command: sudo npm install -g yarn
 
       - run:
+            name: Sonar Cloud Check
+            command:  ./gradlew sonarqube \
+                        -Dsonar.organization=ice94-github \
+                        -Dsonar.host.url=https://sonarcloud.io \
+                        -Dsonar.login=9a4dee1cbb14cf0141ee5e9682515e11edab3158
+      - run:
           name: Build Docker Image
           command: ./gradlew bootRepackage -Pprod -x test
