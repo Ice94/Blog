@@ -1,8 +1,8 @@
 package com.bratek.config;
 
-import com.bratek.security.*;
-import com.bratek.security.jwt.*;
-
+import com.bratek.security.AuthoritiesConstants;
+import com.bratek.security.jwt.JWTConfigurer;
+import com.bratek.security.jwt.TokenProvider;
 import org.springframework.beans.factory.BeanInitializationException;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

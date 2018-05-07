@@ -3,14 +3,11 @@ package com.bratek.config.dbmigrations;
 import com.bratek.domain.Authority;
 import com.bratek.domain.User;
 import com.bratek.security.AuthoritiesConstants;
-
 import com.github.mongobee.changeset.ChangeLog;
 import com.github.mongobee.changeset.ChangeSet;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
 import java.time.Instant;
-import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * Creates the initial database setup

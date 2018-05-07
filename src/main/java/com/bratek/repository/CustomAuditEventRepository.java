@@ -3,7 +3,6 @@ package com.bratek.repository;
 import com.bratek.config.Constants;
 import com.bratek.config.audit.AuditEventConverter;
 import com.bratek.domain.PersistentAuditEvent;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.actuate.audit.AuditEvent;

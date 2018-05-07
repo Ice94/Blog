@@ -2,7 +2,6 @@ package com.bratek.web.rest;
 
 import com.bratek.service.AuditEventService;
 import com.bratek.web.rest.util.PaginationUtil;
-
 import io.github.jhipster.web.util.ResponseUtil;
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.data.domain.Page;

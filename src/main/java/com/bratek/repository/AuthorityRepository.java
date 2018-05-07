@@ -1,7 +1,6 @@
 package com.bratek.repository;
 
 import com.bratek.domain.Authority;
-
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

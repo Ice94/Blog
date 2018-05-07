@@ -1,7 +1,6 @@
 package com.bratek.security;
 
 import com.bratek.config.Constants;
-
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.stereotype.Component;
 

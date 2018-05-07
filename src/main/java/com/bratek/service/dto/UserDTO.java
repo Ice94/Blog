@@ -1,14 +1,13 @@
 package com.bratek.service.dto;
 
 import com.bratek.config.Constants;
-
 import com.bratek.domain.Authority;
 import com.bratek.domain.User;
-
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
-import javax.validation.constraints.*;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.time.Instant;
 import java.util.Set;
 import java.util.stream.Collectors;

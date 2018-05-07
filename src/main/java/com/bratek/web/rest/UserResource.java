@@ -1,7 +1,6 @@
 package com.bratek.web.rest;
 
 import com.bratek.config.Constants;
-import com.codahale.metrics.annotation.Timed;
 import com.bratek.domain.User;
 import com.bratek.repository.UserRepository;
 import com.bratek.security.AuthoritiesConstants;
@@ -13,8 +12,8 @@ import com.bratek.web.rest.errors.EmailAlreadyUsedException;
 import com.bratek.web.rest.errors.LoginAlreadyUsedException;
 import com.bratek.web.rest.util.HeaderUtil;
 import com.bratek.web.rest.util.PaginationUtil;
+import com.codahale.metrics.annotation.Timed;
 import io.github.jhipster.web.util.ResponseUtil;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
@@ -28,7 +27,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * REST controller for managing users.

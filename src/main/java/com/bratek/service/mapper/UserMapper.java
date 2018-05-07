@@ -3,10 +3,11 @@ package com.bratek.service.mapper;
 import com.bratek.domain.Authority;
 import com.bratek.domain.User;
 import com.bratek.service.dto.UserDTO;
-
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**

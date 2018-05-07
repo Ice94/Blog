@@ -1,16 +1,14 @@
 package com.bratek.service;
 
-import com.bratek.config.CacheConfiguration;
+import com.bratek.config.Constants;
 import com.bratek.domain.Authority;
 import com.bratek.domain.User;
 import com.bratek.repository.AuthorityRepository;
-import com.bratek.config.Constants;
 import com.bratek.repository.UserRepository;
 import com.bratek.security.AuthoritiesConstants;
 import com.bratek.security.SecurityUtils;
-import com.bratek.service.util.RandomUtil;
 import com.bratek.service.dto.UserDTO;
-
+import com.bratek.service.util.RandomUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cache.CacheManager;
@@ -22,7 +20,10 @@ import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**

@@ -1,6 +1,7 @@
 package com.bratek.web.rest.vm;
 
 import com.bratek.service.dto.UserDTO;
+
 import javax.validation.constraints.Size;
 
 /**
