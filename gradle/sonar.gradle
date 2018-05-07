@@ -10,3 +10,4 @@ jacocoTestReport {
         xml.enabled true
     }
 }
+
