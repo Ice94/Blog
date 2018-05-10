@@ -58,7 +58,10 @@ jobs:
 
       - run:
             name: Sonar Cloud Check
-            command:  ./gradlew test sonarqube -Dsonar.login=9a4dee1cbb14cf0141ee5e9682515e11edab3158 -Dsonar.organization=ice94-github -Dsonar.projectKey=com.bratek:blog -Dsonar.host.url=https://sonarcloud.io
+            command:  ./gradlew test sonarqube -Dsonar.login=9a4dee1cbb14cf0141ee5e9682515e11edab3158 \
+            -Dsonar.organization=ice94-github \
+            -Dsonar.projectKey=com.bratek:blog \
+            -Dsonar.host.url=https://sonarcloud.io
 
       - run:
           name: Build Docker Image
