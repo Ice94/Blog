@@ -38,7 +38,7 @@ task copyDockerFiles(type: Copy) {
     exclude "**/*.yml"
 }
 
-def dockerImageName = 'blog'
+def dockerImageName = 'ice94/blog'
 
 task buildDocker(type: DockerBuildImage, dependsOn: 'copyDockerFiles') {
     description = "Package application as Docker image"
